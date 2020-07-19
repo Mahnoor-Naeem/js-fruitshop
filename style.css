@@ -1,0 +1,94 @@
+body{
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+/* h1{padding: 0 0 0 50px;}
+
+.wrapper{
+    display: flex;
+}
+
+figcaption{
+    text-align: center;
+}
+figcaption *{
+    margin: 2px 3px;
+}
+figcaption input{
+    width: 40px;
+}
+.btn{
+    margin: 0 0 0 170px;
+} */
+
+.main{
+    display: flex;
+}
+.side-bar{
+    /* flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 20vw; */
+    flex: 0 0 20vw;
+    padding: 10px;
+    background-color: beige;
+}
+.side-bar ul{
+    list-style: none;
+    padding: 0;
+}
+.side-bar ul a{
+    text-decoration: none;
+    color: #566c2b;
+    padding: 10px;
+    /* if we need to proper padding and margin in a tag we need to made display block  */
+    display: block;
+    /* border-bottom: 1px solid grey; */
+}
+.side-bar img{
+    width: 100%;
+}
+article{
+    padding: 10px;
+}
+
+
+.product-container{
+    display: flex;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+}
+.product-box{
+    border: 1px solid #eee;
+    padding: 10px;
+    margin-bottom: 15px;
+    max-width: 320px; /* image dont exceed from box*/
+    flex-basis: 32%;
+    /* Nested Flex container */
+    display: flex;
+    flex-direction: column;   
+}
+.product-box img{
+    width: 100%;
+}
+.action-button{
+    align-self: center;  /*vertical alignment*/
+    /* in flex item assign margin auto its adjust automatically */
+    margin: 0;
+    margin-top: auto;
+}
+.action-button input{
+    width: 30px;
+    margin: 0;
+}
+.action-button a{
+    background-color: gray;
+    border: 2px solid transparent;
+    color: #fff;
+    padding: 1px 14px;
+    text-decoration: none;
+}
+.action-button a:hover{
+    background-color: transparent;
+    border: 2px solid gray;
+    color: gray;
+}

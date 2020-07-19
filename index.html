@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <title>Fruit shop</title>
+</head>
+
+<body>
+    <h1>Welcome to Fruit Shop</h1>
+
+    <!-- <div class="wrapper">
+        <div>
+            <figure>
+                <img src="image/appl.jpg" alt="apple">
+                <figcaption>
+                    <h4>Price of Apple 15 Rs</h4>
+                    <button onclick= "quantityAdd()">+</button>
+                    <input type="number">
+                    <button onclick="quantitySub()">-</button>
+                </figcaption>
+            </figure>
+        </div>   
+    </div> -->
+
+
+    <div class="header">
+
+        <div>
+            <!-- <label for="input">Enter Your Budget</label> -->
+            <input type="number" value="" name="" id="input-budget" placeholder="Enter your Budget">
+            <button onclick="balanceSubmit()">submit</button>
+        </div>
+
+    </div>
+    <main>
+        <div class="main">
+
+            <aside class="side-bar">
+                <!-- ul>li*5>a{some link}      short end-->
+                <ul>
+                    <li>
+                        <h1>Card List</h1>
+                    </li>
+                    <hr>
+                    <li><a> </a></li>
+                    <li><a> </a></li>
+                    <li><a> </a></li>
+                    <li><a> </a></li>
+                    <li><a> </a></li>
+                    <hr>
+                    <li><a>Total Amount: <span> 0</span></a></li>
+                    <li><a>Your Balance: <span id="bal"> 0</span></a></li>
+                    <li><a>Remaining: <span id="total-price"> 0</span></a></li>
+                </ul>
+                <!-- <img src="image/aside-background.jpg" alt=""> -->
+            </aside>
+
+            <div class="product-container">
+                <div class="product-box">
+                    <div class="product-img">
+                        <img src="image/apple.jpg" alt="">
+                    </div>
+                    <div class="action-button">
+                        <a href="" onclick="addApple()">+</a>
+                        <input type="number" id="show-number" value="0">
+                        <a href="" onclick="quantitySub()">-</a>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="product-img">
+                        <img src="image/mango.jpg" alt="">
+                    </div>
+                    <div class="action-button">
+                        <a href="" onclick="quantityAdd()">+</a>
+                        <input type="text">
+                        <a href="" onclick="quantitySub()">-</a>
+                    </div>
+                </div>
+                <div class="product-box">
+                    <div class="product-img">
+                        <img src="image/strawberries.jpg" alt="">
+                    </div>
+                    <div class="action-button">
+                        <a href="" onclick="quantityAdd()">+</a>
+                        <input type="text">
+                        <a href="" onclick="quantitySub()">-</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div>
+            <figure>
+                <img src="image/mango.jpg" alt="mango">
+                <figcaption>
+                    <button onclick= "quantityAdd()">+</button>
+                    <input type="number">
+                    <button onclick="quantitySub()">-</button>
+                </figcaption>
+            </figure>
+        </div>
+        <div>
+            <figure>
+                <img src="image/strawberry.jpg" alt="strwberry">
+                <figcaption>
+                    <button onclick= "quantityAdd()">+</button>
+                    <input type="number">
+                    <button onclick="quantitySub()">-</button>
+                </figcaption>
+            </figure>
+        </div> -->
+
+
+<!-- <div>
+        <button class="btn" onclick="addToCart()">Add to cart</button>
+    </div> -->

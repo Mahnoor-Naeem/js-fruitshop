@@ -10,39 +10,26 @@
 </head>
 
 <body>
-    <h1>Welcome to Fruit Shop</h1>
-
-    <!-- <div class="wrapper">
-        <div>
-            <figure>
-                <img src="image/appl.jpg" alt="apple">
-                <figcaption>
-                    <h4>Price of Apple 15 Rs</h4>
-                    <button onclick= "quantityAdd()">+</button>
-                    <input type="number">
-                    <button onclick="quantitySub()">-</button>
-                </figcaption>
-            </figure>
-        </div>   
-    </div> -->
 
 
     <div class="header">
-
-            <!-- <label for="input">Enter Your Budget</label> -->
-            <input type="number" value="" name="" id="input-budget" placeholder="Enter your Budget">
-            <!-- <button onclick="balanceSubmit()">submit</button> -->
-
+        <h1>Welcome to Fruit Shop</h1>
+        <input type="number" value="" id="input-budget" placeholder="Enter your Budget">
     </div>
+
     <main>
         <div class="main">
             <!-- Side Bar -->
             <aside class="side-bar">
-                <!-- ul>li*5>a{some link}      short end-->
+                <!-- ul>li*5>a{some link}--short end-->
 
                 <table>
                     <thead>
-                        <tr><th><h1>Cart List</h1></th></tr>
+                        <tr>
+                            <th colspan="3">
+                                <h1>Cart List</h1>
+                            </th>
+                        </tr>
                         <tr>
                             <th>Product</th>
                             <th>Quantity</th>
@@ -51,44 +38,34 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <th></th>
-                            <th></th>
-                            <th></th>
+                            <td>Red Apples</td>
+                            <td id="quantity-apple"></td>
+                            <td id="total-price-apple"></td>
                         </tr>
                         <tr>
-                            <th></th>
-                            <th></th>
-                            <th></th>
+                            <td>Mangoes</td>
+                            <td id="quantity-mango"></td>
+                            <td id="total-price-mango" class="price"></td>
                         </tr>
                         <tr>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                        </tr>
-                        <tr>
-                            <th></th>
-                            <th></th>
-                            <th></th>
+                            <td>Strawberries</td>
+                            <td id="quantity-cherry"></td>
+                            <td id="total-price-cherry" class="price"></td>
                         </tr>
                     </tbody>
                     <tfoot>
                         <tr>
-                            <th>Total Amount:</th>
-                            <th> <span id="tot-purch-amount"> 0</span></th>    
+                            <td>Total Amount:</td>
+                            <td colspan="2"> <span id="tot-purch-amount"> 0</span></td>
                         </tr>
                         <tr>
-                            <th>Remaining: </th>
-                            <th><span id="remain-balance"> 0</span></th>
+                            <td>Remaining: </td>
+                            <td colspan="2"><span id="remain-balance"> 0</span></td>
                         </tr>
                     </tfoot>
                 </table>
-                        
-                    <!-- <hr>    -->
-                    <!-- <hr> -->
-                    <!-- <li><a>Total Amount: <span id="tot-purch-amount"> 0</span></a></li> -->
-                    <!-- <li><a>Your Balance: <span id="init-balance"> 0</span></a></li> -->
-                    <!-- <li><a>Remaining: <span id="remain-balance"> 0</span></a></li> -->
-                <!-- <img src="image/aside-background.jpg" alt=""> -->
+
+
             </aside>
 
             <!-- Right div -->
@@ -99,19 +76,19 @@
                     </div>
                     <div class="action-button">
                         <span>RS 15 </span>
-                        <button  onclick="addApple()" id="add-item-apple">+</button>
+                        <button onclick="addApple()" id="add-item-apple">+</button>
                         <input type="number" id="display-quantity-apple" value="0">
                         <button onclick="subApple()" id="sub-item-apple">-</button>
                     </div>
                 </div>
-                
+
                 <div class="product-box">
                     <div class="product-img">
                         <img src="image/mango.jpg" alt="">
                     </div>
                     <div class="action-button">
                         <span>RS 20 </span>
-                        <button  onclick="addMango()" id="add-item-mango">+</button>
+                        <button onclick="addMango()" id="add-item-mango">+</button>
                         <input type="number" id="display-quantity-mango" value="0">
                         <button onclick="subMango()" id="sub-item-mango">-</button>
                     </div>
@@ -123,11 +100,9 @@
                     </div>
                     <div class="action-button">
                         <span>RS 25 </span>
-                        <button  onclick="addCherry()" id="add-item-cherry">+</button>
-                        <!-- <a href="" onclick="quantityAdd()">+</a> -->
+                        <button onclick="addCherry()" id="add-item-cherry">+</button>
                         <input type="number" id="display-quantity-cherry" value="0">
-                        <button onclick="subCherry()" id="sub-item-cherry" >-</button>
-                        <!-- <a href="" onclick="quantitySub()">-</a> -->
+                        <button onclick="subCherry()" id="sub-item-cherry">-</button>
                     </div>
                 </div>
 
@@ -151,7 +126,7 @@
 
 
 
-
+<!-- ---------------------------Console for 1 item-------------------------------- -->
 
 <!-- <div>
             <figure>

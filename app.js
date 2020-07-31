@@ -20,6 +20,9 @@ function addApple() {
             document.getElementById("display-quantity-apple").value = ++qnApple; //here we use pre increment add quantity and show on display input as well.
             totalPriceOfApple = prApple * qnApple;
             console.log(totalPriceOfApple);
+            // for Cart
+            document.getElementById('quantity-apple').innerHTML = qnApple;
+            document.getElementById('total-price-apple').innerHTML = totalPriceOfApple;
             totalBill();
         }
         else {
@@ -37,7 +40,11 @@ function subApple() {
         document.getElementById("display-quantity-apple").value = --qnApple;
         totalPriceOfApple = prApple * qnApple;
         console.log(totalPriceOfApple);
+        // for Cart
+        document.getElementById('quantity-apple').innerHTML = qnApple;
+        document.getElementById('total-price-apple').innerHTML = totalPriceOfApple;
         totalBill();
+
     }
     else {
         alert("No of Items are 0 now!!!");
@@ -52,6 +59,9 @@ function addMango() {
             document.getElementById("display-quantity-mango").value = ++qnMango;
             totalPriceOfMango = prMango * qnMango;
             console.log(totalPriceOfMango);
+            // for Cart
+            document.getElementById('quantity-mango').innerHTML = qnMango;
+            document.getElementById('total-price-mango').innerHTML = totalPriceOfMango;
             totalBill();
         }
         else {
@@ -70,6 +80,9 @@ function subMango() {
         document.getElementById("display-quantity-mango").value = --qnMango;
         totalPriceOfMango = prMango * qnMango;
         console.log(totalPriceOfMango);
+        // for Cart
+        document.getElementById('quantity-mango').innerHTML = qnMango;
+        document.getElementById('total-price-mango').innerHTML = totalPriceOfMango;
         totalBill();
     }
     else {
@@ -85,6 +98,9 @@ function addCherry() {
             document.getElementById("display-quantity-cherry").value = ++qnCherry;
             totalPriceOfCherry = prCherry * qnCherry;
             console.log(totalPriceOfCherry);
+            // for Cart
+            document.getElementById('quantity-cherry').innerHTML = qnMango;
+            document.getElementById('total-price-cherry').innerHTML = totalPriceOfMango;
             totalBill();
         }
         else {
@@ -103,6 +119,9 @@ function subCherry() {
         document.getElementById("display-quantity-cherry").value = --qnCherry;
         totalPriceOfCherry = prCherry * qnCherry;
         console.log(totalPriceOfCherry);
+        // for Cart
+        document.getElementById('quantity-cherry').innerHTML = qnCherry;
+        document.getElementById('total-price-cherry').innerHTML = totalPriceOfCherry;
         totalBill();
     }
     else {
@@ -127,7 +146,7 @@ function totalBill() {
 //     if (totalPurchingAmount <= inpBalance) {
 //         inpBalance = document.getElementById("input-budget").value;
 //         quantity++;
-//         document.getElementById(id).value = quantity;
+//         document.getElementById('id').value = quantity;
 //         total = price * quantity;
 //         console.log(total);
 //         totalBill(total);

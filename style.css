@@ -1,25 +1,21 @@
 body{
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-image: url(https://png.pngtree.com/thumb_back/fh260/back_our/20190620/ourmid/pngtree-fruit-shop-promotion-poster-background-image_154863.jpg);
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
 }
-/* h1{padding: 0 0 0 50px;}
-
-.wrapper{
+.header{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 40px;
+    color: rgb(16, 202, 62);
 }
-
-figcaption{
-    text-align: center;
-}
-figcaption *{
-    margin: 2px 3px;
-}
-figcaption input{
-    width: 40px;
-}
-.btn{
-    margin: 0 0 0 170px;
-} */
 
 .main{
     display: flex;
@@ -29,29 +25,23 @@ figcaption input{
     flex-shrink: 0;
     flex-basis: 20vw; */
     flex: 0 0 20vw;
-    padding: 10px;
-    background-color: beige;
-}
-.side-bar ul{
-    list-style: none;
-    padding: 0;
-}
-.side-bar ul a{
-    text-decoration: none;
-    color: #566c2b;
-    padding: 10px;
-    /* if we need to proper padding and margin in a tag we need to made display block  */
-    display: block;
-    /* border-bottom: 1px solid grey; */
-}
-.side-bar img{
-    width: 100%;
-}
-article{
-    padding: 10px;
-}
+    /* rgba(140, 220, 125,2); */
+    background-color: rgba(140, 220, 125,2);
+    margin-right: 15px;
 
-
+}
+.side-bar table{
+    margin: auto;
+    padding: 2px;
+    color: white;
+}
+.side-bar table th, .side-bar table td{
+    border: 1px solid rgba(166, 240, 140,1);
+    padding: 3px;
+}
+.price{
+    text-align: right;
+}
 .product-container{
     display: flex;
     /* flex-wrap: wrap; */
@@ -92,3 +82,10 @@ article{
     border: 2px solid gray;
     color: gray;
 }
+@media screen and (max-width: 950px) {
+    .product-container{
+        flex-direction: column;
+        margin: auto;
+    }
+
+ }

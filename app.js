@@ -11,12 +11,16 @@ let totalPriceOfCherry = 0;
 let totalPurchingAmount = 0;
 let remainingBalance = 0;
 
+function addAmount(){
+    inpBalance = parseInt(document.getElementById("input-budget").value);
+    remainingBalance = inpBalance;
+    document.getElementById("remain-balance").innerHTML = remainingBalance;
+}
 
 function addApple() {
-    inpBalance = document.getElementById("input-budget").value;
     // checkBalance();
     if (inpBalance > 0) {
-        if (remainingBalance >= totalPurchingAmount) {
+        if (remainingBalance >= prApple) {
             document.getElementById("display-quantity-apple").value = ++qnApple; //here we use pre increment add quantity and show on display input as well.
             totalPriceOfApple = prApple * qnApple;
             console.log(totalPriceOfApple);
@@ -52,10 +56,9 @@ function subApple() {
 }
 
 function addMango() {
-    inpBalance = document.getElementById("input-budget").value;
     // checkBalance();
     if (inpBalance > 0) {
-        if (remainingBalance >= totalPurchingAmount) {
+        if (remainingBalance >= prMango) {
             document.getElementById("display-quantity-mango").value = ++qnMango;
             totalPriceOfMango = prMango * qnMango;
             console.log(totalPriceOfMango);
@@ -91,10 +94,9 @@ function subMango() {
 }
 
 function addCherry() {
-    inpBalance = document.getElementById("input-budget").value;
     // checkBalance();
     if (inpBalance > 0) {
-        if (remainingBalance >= totalPurchingAmount) {
+        if (remainingBalance >= prCherry) {
             document.getElementById("display-quantity-cherry").value = ++qnCherry;
             totalPriceOfCherry = prCherry * qnCherry;
             console.log(totalPriceOfCherry);

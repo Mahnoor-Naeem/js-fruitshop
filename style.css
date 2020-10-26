@@ -6,17 +6,30 @@ body{
     /* background-position: center; */
     background-size: cover;
 }
-.header{
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding-bottom: 40px;
-    color: rgb(16, 202, 62);
+h1{
+    text-align: center;
+    color: #eee;
 }
-
+.header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 40px;
+}
+.header input{
+    padding: 5px 10px;
+    margin: 5px;
+}
+.header button{
+    padding: 5px 10px;
+    outline: none;
+    background: none;
+}
+.header button:hover{
+    color: #fff;
+    background-color: rgba(125, 205, 110,2);
+    border: 2px solid rgba(125, 205, 110,2);
+}
 .main{
     display: flex;
 }
@@ -26,7 +39,7 @@ body{
     flex-basis: 20vw; */
     flex: 0 0 20vw;
     /* rgba(140, 220, 125,2); */
-    background-color: rgba(140, 220, 125,2);
+    background-color: rgba(125, 205, 110,2);
     margin-right: 15px;
 
 }
